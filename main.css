@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Nunito:wght@400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #f3f6f8;
+    background-size: cover;
+    background-position: center;
+    font-size: 17px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* Container_fuir */
+#bop_app{
+    padding-top: 53px;
+}
+
+#bop_app > section:not(#bop_cancel){
+    padding-top: 20px;
+}
+
+div i{
+    /* Path */
+    font-size: 37px;
+    position: absolute;
+    left: 7.62%;
+    right: 89.62%;
+    top: 0.7%; /* Cambio de medidas para adapatarlo a @media query*/
+    bottom: 32.38%;
+    margin-left: 20.33px;
+    margin-top: 1px;
+
+    /* neutral / 2 */
+    color: #CACACA;
+    z-index: 99999;
+}
+
+div i:hover{
+    color: #2F80ED;
+}
+/*Responsive*/
+
+div div h4{
+    padding-left: 0;
+    letter-spacing: 1px;
+
+    /* Sign in */
+    position: absolute;
+    height: 27px;
+    left: 0.27%; /* Cambio de medidas para adapatarlo a @media query*/
+    right: 28.53%;
+    top: calc(50% - 27px/2 - 0.5px);
+    width: 100%;
+    margin-top: 10px;
+
+    /* title / 2 */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px; 
+    line-height: 27px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+
+    /* neutral / 1 */
+    color: #343434;
+}
+/*Responsive*/
+
+span{
+    /* Cancel */
+    position: absolute;
+    width: 64px;
+    height: 22px;
+    left: 28px;
+    top: 0px;
+    margin-right: 70px;
+    margin-top: 10px;
+
+    /* body / 2 */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+
+    /* identical to box height */
+    text-align: right;
+    font-family: 'Nunito', sans-serif;
+
+    /* neutral / 2 */
+    color: #989898;
+}
+/*Responsive*/
+
+div span:hover{
+    color: #2F80ED;
+}
+
+/*Animated ProgressBar*/
+#step_progressbar{
+    display: block;
+    margin: 100px auto;
+    width: 420px;
+    top: 100px;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: flex;
+    counter-reset: step;
+}
+
+li{
+    display: inline-block;
+    position: relative;
+    width: 33.33%;
+    height: 10px;
+    text-align: center;
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+    top: calc(50% - 16px/2 + 14px);
+}
+
+li i{
+    padding: 0px;
+    display: block;
+    width: 42px;
+    height: 42px; 
+    margin: 10px auto;
+    line-height: 25px;
+    text-align: center;
+    content: counter(step);
+    counter-increment: step;
+    position: relative;
+    z-index: 2;
+    font-size: 35.99px;
+    color: #CACACA;
+}
+
+i{
+    color:#CACACA;
+}
+
+li:after{
+    content: "";
+    width: 100%;
+    height: px;
+    background:#CACACA;
+    border: 1px solid #CACACA;
+    position: absolute;
+    top: 52px;
+    left: -50%;
+    z-index: -1;
+    color: #989898;
+}
+
+li:first-child:after{
+    content: none;
+    background: #2F80ED;
+    padding: 1px;
+}
+
+li:hover{
+    color: #2F80ED;
+}
+
+li :after:hover{
+    background: #2F80ED;
+}
+
+li h5{
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #CACACA;
+    top: calc(50% - 16px/2 + 14px);
+    height: 16px;
+    font-family: 'Nunito', sans-serif;
+    padding: 0.5px;
+}
+
+li h5:hover{
+    color: #2F80ED;
+}
+/*Responsive*/
+
+/*Login form*/
+*,
+*:before,
+*:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a, a:link{
+    text-decoration: none;
+}
+
+:root{
+    --color-white:#fff;
+    --primary-color:  #2F80ED;
+    --heading-color: #F2F2F2;
+    --grey-light: #F2F2F2;
+}
+
+.login__container{
+    width: 55.50%;
+    height: 33.33%; 
+    background-color: #fff;
+    position: absolute;
+    top: 38.99%;
+    left: 40.99%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    padding: 0.01px;
+    font-size: 14px;
+    text-transform: none;
+}
+
+.login__box{
+    padding: 1rem;
+}
+
+.login__header h3{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    align-items: center;
+    justify-items: left;
+
+    /* Room information */
+    width: 302px;
+    height: 32px;
+    left: 24px;
+    top: 178px;
+    font-style: normal;
+    font-family: 'Nunito', sans-serif;
+
+    /* neutral / 1 */
+    color: #343434;
+}
+
+.form__input p{
+    /* Title of the post */
+    position: static;
+    height: 20px;
+    left: 6.4%;
+    right: 75.73%;
+    top: calc(50% - 20px/2 -27.5px);
+
+    /* body / 5 */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+
+    /* neutral / 2 */
+    color: #989898;
+    font-family: 'Raleway', sans-serif;
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    align-self: flex-start;
+    margin: 10px 11px;
+    padding-top: 0.3rem;
+}
+
+.form__input input{
+    /* Auto Layout */
+    display: flex;
+    flex-direction: column;
+    padding: 11px 16px;
+    margin-left: 50px;
+
+    position: static;
+    width: 520px;
+    height: 47px;
+    left: 24px;
+    top: 31px;
+
+    /* neutral / 4 */
+    background: #F2F2F2;
+    border-radius: 20px;
+    border: none;
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 1;
+    align-self: center;
+    margin: 0px 11px;
+    border-inline: none;
+}
+
+.form__btn{
+    position: static;
+    width: 520px;
+    height: 44px;
+    left: 24px;
+    top: 31px;
+
+    /* Blue 1 */
+    background-color: #2F80ED;
+    margin: 10px 0;
+    border-radius: 20px;
+    border: none;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 1rem;
+
+    flex-direction: column;
+    padding: 23.33px 16px;
+    margin: 47px;
+    margin-left: 10px;
+    top: 31px;
+    cursor: pointer;
+}
+
+.form__btn a{
+    width: 495px;
+    height: 52px;
+    border: none;
+    outline: none;
+    text-transform: initial;
+    background: none;
+    align-content: center;
+    text-align: center;
+    font-style: normal;
+    font-family: 'Nunito', sans-serif;
+    line-height: 0;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+
+
+
+/*Responsive @media query*/
+@media only screen and (min-width:320px) and (max-width:768px) and (orientation: landscape){
+
+    .body{
+        float: left;
+        width: 20em;
+    }
+}
+
+
+
+@media all and (max-width:768px){
+
+}
+
+
+
+
+
+
+
+
